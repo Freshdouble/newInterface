@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>800</width>
+    <height>800</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -37,7 +37,7 @@
       </property>
       <property name="source">
        <url>
-        <string>file:///home/peter/Spaceteam/MainWindowForm.ui.qml</string>
+        <string>file:///C:/Users/Local/Documents/newInterface/MainWindowForm.ui.qml</string>
        </url>
       </property>
      </widget>
@@ -49,8 +49,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>400</width>
-     <height>19</height>
+     <width>800</width>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuDatei">

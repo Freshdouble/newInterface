@@ -24,4 +24,9 @@ FORMS    += mainwind.ui \
 
 DISTFILES += \
     MainWindowForm.ui.qml \
-    MainWindow.qml
+    MainWindow.qml \
+    CircularStyle.qml \
+    AccellartionStyle.qml
+
+RESOURCES += \
+    ressource.qrc
