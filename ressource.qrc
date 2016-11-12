@@ -3,4 +3,10 @@
         <file>MainWindow.qml</file>
         <file>MainWindowForm.ui.qml</file>
     </qresource>
+    <qresource prefix="/fonts">
+        <file>digital-7 (italic).ttf</file>
+        <file>digital-7 (mono italic).ttf</file>
+        <file>digital-7 (mono).ttf</file>
+        <file>digital-7.ttf</file>
+    </qresource>
 </RCC>

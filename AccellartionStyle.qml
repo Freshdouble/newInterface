@@ -2,7 +2,7 @@ import QtQuick 2.4
 import QtQuick.Controls.Styles 1.4
 
 CircularGaugeStyle {
-
+    FontLoader { id: digital; source: "qrc:/fonts/digital-7.ttf" }
     property real xCenter: outerRadius
     property real yCenter: outerRadius
     property real needleLength: outerRadius - tickmarkInset * 1.25
@@ -26,11 +26,25 @@ CircularGaugeStyle {
     {
         return value.toFixed(dezimals).toString();
     }
+    tickmark: Rectangle {
+            implicitWidth: outerRadius * 0.02
+            antialiasing: true
+            implicitHeight: outerRadius * 0.06
+            color: "black"
+        }
+
+    minorTickmark: Rectangle {
+            implicitWidth: outerRadius * 0.01
+            antialiasing: true
+            implicitHeight: outerRadius * 0.03
+            color: "grey"
+        }
 
     background: Canvas {
 
         Text {
             id: speedText
+            font.family: digital.name
             font.pixelSize: toPixels(0.3)
             text: toFixed(control.value/10,1)
             color: "black"
@@ -51,7 +65,7 @@ CircularGaugeStyle {
     tickmarkLabel: Text {
             font.pixelSize: Math.max(6, __protectedScope.toPixels(0.12))
             text: toFixed(styleData.value/10,1)
-            color: "#c8c8c8"
+            color: "grey"
             antialiasing: true
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
